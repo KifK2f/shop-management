@@ -9,6 +9,7 @@ import java.util.Optional;
 public interface AgentShopAssignRepository extends JpaRepository<AgentShopAssignment, Long> {
     List<AgentShopAssignment> findAllByAgentLastName(String lastNameAgent);
     List<AgentShopAssignment> findAllByAgentFirstName(String firstNameAgent);
-    List<AgentShopAssignment> findAllByAgentLastNameAndFirstName(String firstNameAgent);
-    List<AgentShopAssignment> findAllByPartenaireNom(String nomPartenaire);
+    List<AgentShopAssignment> findAllByAgentLastNameAndFirstName(String lastNameAgent, String firstNameAgent);
+
+    List<AgentShopAssignment> findAllByShopName(String nameShop);
 }
