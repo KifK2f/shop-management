@@ -1,9 +1,16 @@
 package com.friedo.shop_management.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
 @Entity
 @Table(name = "agent_boutique")
 public class AgentShopAssignment {
